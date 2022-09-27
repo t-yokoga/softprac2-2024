@@ -1,0 +1,1643 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.4.4">
+    
+    
+      
+        <title>課題R3 - ソフトウェア演習II</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6b80c2a2.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
+    
+      <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:600,800">
+    
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+    
+      <link rel="stylesheet" href="../css/custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#r-3" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="ソフトウェア演習II" class="md-header__button md-logo" aria-label="ソフトウェア演習II" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ソフトウェア演習II
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              課題R3
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="ソフトウェア演習II" class="md-nav__button md-logo" aria-label="ソフトウェア演習II" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    ソフトウェア演習II
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Top
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lec01/" class="md-nav__link">
+        課題R1
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lec02/" class="md-nav__link">
+        課題R2
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          課題R3
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        課題R3
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    課題の概要
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    インターフェース
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    アルゴリズム
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    課題1 線形リストを用いた辞書機能の実現
+  </a>
+  
+    <nav class="md-nav" aria-label="課題1 線形リストを用いた辞書機能の実現">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    線形リスト
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    データの追加
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    データの探索
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    データの削除
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    データ構造
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    課題1 プログラムの実装
+  </a>
+  
+    <nav class="md-nav" aria-label="課題1 プログラムの実装">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    単語の表示
+  </a>
+  
+    <nav class="md-nav" aria-label="単語の表示">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    演習課題1
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    単語の追加
+  </a>
+  
+    <nav class="md-nav" aria-label="単語の追加">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    演習課題2
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    単語の検索
+  </a>
+  
+    <nav class="md-nav" aria-label="単語の検索">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    演習課題3
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    重複を考慮した単語の追加
+  </a>
+  
+    <nav class="md-nav" aria-label="重複を考慮した単語の追加">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    演習課題4
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    単語の削除
+  </a>
+  
+    <nav class="md-nav" aria-label="単語の削除">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    演習課題5
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    演習課題6
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    課題2 二分探索木を用いた辞書機能の実現
+  </a>
+  
+    <nav class="md-nav" aria-label="課題2 二分探索木を用いた辞書機能の実現">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    二分探索木
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    二分探索木のデータの探索
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    二分探索木へのデータの追加
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    二分探索木のデータの削除
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    データ構造
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    課題2 プログラムの実装
+  </a>
+  
+    <nav class="md-nav" aria-label="課題2 プログラムの実装">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    演習課題7
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    演習課題8
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    演習課題9
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    演習課題10
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    演習課題11
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lec04/" class="md-nav__link">
+        課題R4
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    課題の概要
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    インターフェース
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    アルゴリズム
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    課題1 線形リストを用いた辞書機能の実現
+  </a>
+  
+    <nav class="md-nav" aria-label="課題1 線形リストを用いた辞書機能の実現">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    線形リスト
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    データの追加
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    データの探索
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    データの削除
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    データ構造
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    課題1 プログラムの実装
+  </a>
+  
+    <nav class="md-nav" aria-label="課題1 プログラムの実装">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    単語の表示
+  </a>
+  
+    <nav class="md-nav" aria-label="単語の表示">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    演習課題1
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    単語の追加
+  </a>
+  
+    <nav class="md-nav" aria-label="単語の追加">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    演習課題2
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    単語の検索
+  </a>
+  
+    <nav class="md-nav" aria-label="単語の検索">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    演習課題3
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    重複を考慮した単語の追加
+  </a>
+  
+    <nav class="md-nav" aria-label="重複を考慮した単語の追加">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    演習課題4
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    単語の削除
+  </a>
+  
+    <nav class="md-nav" aria-label="単語の削除">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    演習課題5
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    演習課題6
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    課題2 二分探索木を用いた辞書機能の実現
+  </a>
+  
+    <nav class="md-nav" aria-label="課題2 二分探索木を用いた辞書機能の実現">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    二分探索木
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    二分探索木のデータの探索
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    二分探索木へのデータの追加
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    二分探索木のデータの削除
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    データ構造
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    課題2 プログラムの実装
+  </a>
+  
+    <nav class="md-nav" aria-label="課題2 プログラムの実装">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    演習課題7
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    演習課題8
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    演習課題9
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    演習課題10
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    演習課題11
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="r-3">課題 R-3 「辞書プログラムの作成」</h1>
+<h2 id="_1">課題の概要</h2>
+<p>単語の名前を入力すると意味を出力する辞書の機能をもつプログラムdic.cを作成せよ．
+辞書データは名前と意味の2つをもち，データの追加・削除が可能である．
+辞書機能を実現するためにはデータの追加・削除・検索が可能なデータ構造を実装する必要があるが，本課題では，線形リストと二分探索木という2通りのデータ構造を用いる．</p>
+<h2 id="_2">インターフェース</h2>
+<p>このプログラムは実行されると入力待ち状態となり，単語が入力されたらそれに対応する内容を出力するものとする．
+ただし，以下の文字列が入力された場合は，それぞれに応じた辞書の操作を行うものとする（始めに<code>-</code>をつけることで，単語と区別する）．</p>
+<ol>
+<li><code>-add</code>    ：単語の追加</li>
+<li><code>-delete</code> ：単語の削除</li>
+<li><code>–quit</code>   ：プログラムの終了</li>
+</ol>
+<p>実行例を以下に示す．</p>
+<div class="highlight" style="background: #272822"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-0-1"> 1</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-0-2"> 2</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-0-3"> 3</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-0-4"> 4</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-0-5"> 5</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-0-6"> 6</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-0-7"> 7</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-0-8"> 8</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-0-9"> 9</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-0-10">10</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-0-11">11</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-0-12">12</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-0-13">13</a></span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span style="color: #f92672; font-weight: bold">$ </span>./dic
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span style="color: #66d9ef">調べたい単語を入力してください．</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span style="color: #66d9ef">単語の追加は -add，削除は -delete，プログラムの終了は -quit を入力してください．</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span style="color: #66d9ef">-add↵</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span style="color: #66d9ef">辞書に単語を追加します：</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span style="color: #66d9ef">名前は？ りんご↵</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span style="color: #66d9ef">意味は？ 赤，黄，緑の皮をもつ果物↵</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a><span style="color: #66d9ef">単語【りんご】を追加しました．</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9"></a><span style="color: #66d9ef">調べたい単語を入力してください．</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10"></a><span style="color: #66d9ef">りんご↵</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11"></a><span style="color: #66d9ef">【りんご】赤，黄，緑の皮をもつ果物 ↵</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12"></a><span style="color: #66d9ef">調べたい単語を入力してください．</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13"></a><span style="color: #66d9ef">-quit↵</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="_3">アルゴリズム</h2>
+<p>このプログラムの実行の流れは以下のようになる．</p>
+<ol>
+<li>標準入出力からの入力を待つ</li>
+<li>入力に応じて以下の処理を繰り返す<ol>
+<li><code>-add</code>なら，単語の追加処理を行う</li>
+<li><code>-delete</code>なら，単語の削除処理を行う</li>
+<li><code>-quit</code> なら，プログラムを終了する</li>
+<li>それ以外なら，その単語で辞書を検索する<ol>
+<li>単語が見つかれば，その単語の意味を出力する</li>
+<li>単語が見つからなければ，見つからなかったことを知らせる</li>
+</ol>
+</li>
+<li>2へ戻る</li>
+</ol>
+</li>
+</ol>
+<h2 id="1">課題1 線形リストを用いた辞書機能の実現</h2>
+<p>この課題では，随時データの追加・削除を行うため，データ構造として構造体とポインタによる線形リストを用いる．</p>
+<h3 id="_4">線形リスト</h3>
+<p>線形リストは，図1のように構造体をポインタで直線的に接続した構造をもつ．
+リストの各要素は，<code>key</code> と <code>next</code> という（少なくとも）2つのメンバをもつ構造体 <code>Node</code> として定義する．</p>
+<p><center>
+<br>
+<img src="../img/r3/1-list.pdf"></p>
+<p>図1：線形リスト
+<br>
+</center></p>
+<p><code>key</code>はリストの各要素がもつデータを表す．<code>next</code>はリストの要素を指すポインタであり，リストを連結するために用いる．
+リストの先頭は <code>Node *</code> 型のポインタ <code>head</code> で表しており，リストの最後の要素がもつポインタは <code>NULL</code> を指している．</p>
+<p><code>int</code>型のデータをもつリストにおける<code>Node</code>の定義例を以下に示す．</p>
+<div class="highlight" style="background: #272822"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-1-1">1</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-1-2">2</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-1-3">3</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-1-4">4</a></span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span style="color: #66d9ef">typedef</span><span style="color: #f8f8f2"> </span><span style="color: #66d9ef">struct</span><span style="color: #f8f8f2"> </span><span style="color: #a6e22e">node</span><span style="color: #f8f8f2">{</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span style="color: #f8f8f2">    </span><span style="color: #66d9ef">int</span><span style="color: #f8f8f2"> key;</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span style="color: #f8f8f2">    </span><span style="color: #66d9ef">struct</span><span style="color: #f8f8f2"> </span><span style="color: #a6e22e">node</span><span style="color: #f8f8f2"> </span><span style="color: #f92672">*</span><span style="color: #f8f8f2">next;</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span style="color: #f8f8f2">} Node;</span>
+</code></pre></div></td></tr></table></div>
+<p>線形リストへのデータの追加，探索，削除はそれぞれ以下に示す手続きによって実現することができる．</p>
+<h3 id="_5">データの追加</h3>
+<p>線形リストへデータ <code>val</code> を追加する場合，図2に示すように新たな要素となる <code>Node</code> 型の構造体を作成してその <code>key</code> を <code>val</code> とし，リストの先頭に付け加える．</p>
+<p><center>
+<br>
+<img src="../img/r3/2-list.pdf"></p>
+<p>図2：線形リストへのデータの追加
+<br>
+</center></p>
+<div class="admonition tip">
+<p class="admonition-title">動的なデータの作成</p>
+<ul>
+<li>データの作成には <code>malloc</code> 関数を用いる．この際に <code>#include &lt;stdlib.h&gt;</code> する必要がある．
+<div class="highlight" style="background: #272822"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-2-1">1</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-2-2">2</a></span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span style="color: #f8f8f2">Node </span><span style="color: #f92672">*</span><span style="color: #f8f8f2">new;</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span style="color: #f8f8f2">new </span><span style="color: #f92672">=</span><span style="color: #f8f8f2"> (Node </span><span style="color: #f92672">*</span><span style="color: #f8f8f2">)malloc(</span><span style="color: #66d9ef">sizeof</span><span style="color: #f8f8f2">(Node));</span>
+</code></pre></div></td></tr></table></div>
+<code>malloc</code> 関数は，戻り値として新たに作成した構造体へのポインタを返す．
+上記の例では，ポインタを変数 <code>new</code> へ格納している．</li>
+</ul>
+</div>
+<p>これを実現するための手順は，以下の通りとなる．</p>
+<ol>
+<li>
+<p><code>malloc</code> 関数で新たな構造体を作成し，その位置を指すポインタを <code>new</code> とする．</p>
+<p><img src="../img/r3/3-list1.pdf"></p>
+</li>
+<li>
+<p><code>new-&gt;key</code> に値 <code>val</code> をコピーする．</p>
+<p><img src="../img/r3/3-list2.pdf"></p>
+</li>
+<li>
+<p><code>new-&gt;next</code> に，ポインタ <code>head</code> をコピーする．</p>
+<p><img src="../img/r3/3-list3.pdf"></p>
+</li>
+<li>
+<p><code>head</code> に <code>new</code>をコピーする．</p>
+<p><img src="../img/r3/3-list4.pdf"></p>
+</li>
+</ol>
+<h3 id="_6">データの探索</h3>
+<p>線形リストの探索では，図3に示すようにリストから値 <code>val</code> をもつ構造体を探索し，その位置をポインタとして返す．</p>
+<p><center>
+<br>
+<img src="../img/r3/4-list.pdf"></p>
+<p>図3：線形リストのデータの探索
+<br>
+</center></p>
+<p>求めるポインタを <code>p</code> とすると，この処理は以下の手順で実現できる．</p>
+<ol>
+<li>
+<p><code>p</code> を <code>head</code> で初期化する．</p>
+<p><img src="../img/r3/5-list1.pdf"></p>
+</li>
+<li>
+<p><code>p != NULL</code> である間，以下の処理を繰り返す：</p>
+<ol>
+<li><code>p</code> が指す要素の値（<code>p-&gt;key</code>）と <code>val</code> を比較する．    <ul>
+<li>等しくなければ，次の要素を調べるため <code>p</code> を <code>p-&gt;next</code> へと更新する．
+<img src="../img/r3/5-list2.pdf">
+<img src="../img/r3/5-list3.pdf"></li>
+<li>等しければ，<code>p</code> を求めるポインタとして処理を終了する．
+<img src="../img/r3/5-list4.pdf">
+<img src="../img/r3/5-list5.pdf"></li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p><code>p == NULL</code> となった場合は，リストを最後まで探索しても求める要素が存在しないため，手続きを終了する．</p>
+</li>
+</ol>
+<h3 id="_7">データの削除</h3>
+<p>線形リストからデータ <code>val</code> を削除する場合，図4に示すようにリストから値 <code>val</code> をもつ要素 <code>target</code> を探索し，要素 <code>target</code> の直前の要素と直後の要素をポインタ <code>next</code> で接続した上で要素 <code>target</code> を削除する．</p>
+<p><center>
+<br>
+<img src="../img/r3/6-list.pdf"></p>
+<p>図4：線形リストのデータの削除
+<br>
+</center></p>
+<div class="admonition tip">
+<p class="admonition-title">動的なデータの削除</p>
+<ul>
+<li>データの削除には <code>free</code> 関数を用いる．<code>malloc</code> と同様に <code>#include &lt;stdlib.h&gt;</code> する必要がある．
+<div class="highlight" style="background: #272822"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-3-1">1</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-3-2">2</a></span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span style="color: #f8f8f2">Node </span><span style="color: #f92672">*</span><span style="color: #f8f8f2">new;</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a><span style="color: #f8f8f2">free(new);</span>
+</code></pre></div></td></tr></table></div>
+<code>free</code> 関数は引数として，削除対象となるデータへのポインタをとる．
+上記の例では，ポインタ <code>new</code> が指す構造体のデータを削除している．</li>
+</ul>
+</div>
+<p>ここで，<code>target</code> を削除するためには <code>target</code> を指すポインタを参照する必要があり，その直前の要素と直後の要素を接続するには<code>target</code>の直前の要素の <code>next</code> を更新する必要がある．
+そのため，以下の 2 つのポインタ <code>Node **p</code> および <code>Node *q</code> を用いる．</p>
+<ul>
+<li><code>p</code> は探索中の要素を指すポインタへの二重ポインタであり，<strong><code>target</code>の直前の要素の<code>next</code>を更新する</strong>ために用いる．</li>
+<li><code>q</code> は要素<code>target</code>を指すためのポインタであり，<strong><code>target</code>を削除する</strong>ために用いる．
+    <img src="../img/r3/7-list1.pdf"></li>
+</ul>
+<p>そして，以下の手順で <code>val</code> をもつ要素の削除が実現できる．</p>
+<ol>
+<li><code>p</code> を <code>head</code> へのポインタで初期化する（<code>p=&amp;head</code>）．
+    <img src="../img/r3/7-list2.pdf"></li>
+<li>
+<p><code>*p != NULL</code> である間，以下の処理を繰り返す： </p>
+<ol>
+<li>
+<p><code>*p</code> の指す要素の値 <code>(*p)-&gt;key</code> が <code>val</code> と等しいか調べる．</p>
+<ul>
+<li>
+<p>等しければ：</p>
+<p><img src="../img/r3/7-list5.pdf"></p>
+<ol>
+<li><code>*p</code> は <code>target</code> を指しているため，<code>q</code> に <code>*p</code> をコピーする．</li>
+</ol>
+<p><img src="../img/r3/7-list6.pdf"></p>
+<ol>
+<li><code>*p</code> を <code>target</code> の <code>next</code>（つまり <code>(*p)-&gt;next</code>）で更新する．</li>
+</ol>
+<p><img src="../img/r3/7-list7.pdf"></p>
+<ol>
+<li><code>q</code> が指す要素を削除する．</li>
+</ol>
+<p><img src="../img/r3/7-list8.pdf"></p>
+</li>
+<li>
+<p>等しくなければ，次の要素を調べるため<code>p</code>を「<code>*p</code>が指す要素の<code>next</code>へのポインタ（つまり<code>&amp;((*p)-&gt;next</code>)）」へ更新する．</p>
+<p><img src="../img/r3/7-list3.pdf">
+<img src="../img/r3/7-list4.pdf"></p>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p><code>*p = NULL</code> となった場合は，リストを最後まで探索しても求める要素 <code>target</code> がリスト上に存在しないため，手続きを終了する．</p>
+</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">ポインタ関連の演算子の優先順位</p>
+<ul>
+<li>「ポインタが指す～」を表す演算子 <code>*</code> や「〜のアドレス」を表す演算子 <code>&amp;</code> と，「ポインタが指す構造体のメンバ～」を表す演算子 <code>-&gt;</code> では，<code>-&gt;</code> の優先順位が高い．</li>
+<li>なので，「二重ポインタ <code>p</code> が指しているポインタが指す構造体の要素 <code>key</code> 」を表現するには，括弧を付けて <code>(*p)-&gt;key</code> とする必要がある．</li>
+</ul>
+</div>
+<h3 id="_8">データ構造</h3>
+<p>このプログラムでは，各単語のデータを以下のメンバをもつ構造体で表し，その上で線形リストを構成する．</p>
+<ul>
+<li><code>id</code>   ：名前．他とは重複しない． 文字数は半角16文字以下とする．</li>
+<li><code>def</code>  ：意味．他と重複してもよい．文字数は半角256文字以下とする．</li>
+<li><code>next</code> ：リストの次要素へのポインタ．</li>
+</ul>
+<p>辞書の単語を表し，線形リストを構成する要素となる構造体 <code>Word</code> を以下のように定義する．</p>
+<div class="highlight" style="background: #272822"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-4-1">1</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-4-2">2</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-4-3">3</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-4-4">4</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-4-5">5</a></span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span style="color: #66d9ef">typedef</span><span style="color: #f8f8f2"> </span><span style="color: #66d9ef">struct</span><span style="color: #f8f8f2"> </span><span style="color: #a6e22e">word</span><span style="color: #f8f8f2">{</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a><span style="color: #f8f8f2">    </span><span style="color: #66d9ef">char</span><span style="color: #f8f8f2"> id[</span><span style="color: #ae81ff">16</span><span style="color: #f8f8f2">];</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3"></a><span style="color: #f8f8f2">    </span><span style="color: #66d9ef">char</span><span style="color: #f8f8f2"> def[</span><span style="color: #ae81ff">256</span><span style="color: #f8f8f2">];</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4"></a><span style="color: #f8f8f2">    </span><span style="color: #66d9ef">struct</span><span style="color: #f8f8f2"> </span><span style="color: #a6e22e">word</span><span style="color: #f8f8f2"> </span><span style="color: #f92672">*</span><span style="color: #f8f8f2">next;</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5"></a><span style="color: #f8f8f2">} Word;</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="1_1">課題1 プログラムの実装</h2>
+<h3 id="_9">単語の表示</h3>
+<p>まずは，リストに登録された単語の情報を標準入出力へと表示するための関数を作成する．
+出力形式は，</p>
+<ul>
+<li>【名前】意味</li>
+</ul>
+<p>とする．</p>
+<h4 id="1_2">演習課題1</h4>
+<p>単語を表す <code>Word</code> 型の構造体へのポインタ <code>p</code> を引数とし，<code>p</code> が指す値が <code>NULL</code> でなければ単語の名前と意味を標準入出力へと出力する関数 <code>print_word()</code> を作成せよ．</p>
+<div class="highlight" style="background: #272822"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">プロトタイプ宣言</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-5-1">1</a></span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span style="color: #66d9ef">void</span><span style="color: #f8f8f2"> </span><span style="color: #a6e22e">print_word</span><span style="color: #f8f8f2">(Word </span><span style="color: #f92672">*</span><span style="color: #f8f8f2">p);</span>
+</code></pre></div></td></tr></table></div>
+<p><code>print_word()</code> 関数の呼び出し例をサンプルコード <a href="../sample/kadaiR3-1.c">kadaiR3-1.c</a> に示している．
+以下に <code>main</code> 関数を抜粋する．</p>
+<div class="highlight" style="background: #272822"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">kadaiR3-1.c から抜粋</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-6-1">1</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-6-2">2</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-6-3">3</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-6-4">4</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-6-5">5</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-6-6">6</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-6-7">7</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-6-8">8</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-6-9">9</a></span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span style="color: #66d9ef">int</span><span style="color: #f8f8f2"> </span><span style="color: #a6e22e">main</span><span style="color: #f8f8f2">(){</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2"></a><span style="color: #f8f8f2">    Word w;</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3"></a>
+<a id="__codelineno-6-4" name="__codelineno-6-4"></a><span style="color: #f8f8f2">    strcpy(w.id, </span><span style="color: #e6db74">&quot;apple&quot;</span><span style="color: #f8f8f2">);</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5"></a><span style="color: #f8f8f2">    strcpy(w.def, </span><span style="color: #e6db74">&quot;fruit with red or yellow or green skin&quot;</span><span style="color: #f8f8f2">);</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6"></a><span style="color: #f8f8f2">    w.next </span><span style="color: #f92672">=</span><span style="color: #f8f8f2"> NULL;</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7"></a>
+<a id="__codelineno-6-8" name="__codelineno-6-8"></a><span style="color: #f8f8f2">    print_word(</span><span style="color: #f92672">&amp;</span><span style="color: #f8f8f2">w);</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9"></a><span style="color: #f8f8f2">}</span>
+</code></pre></div></td></tr></table></div>
+<p>このサンプルコードでは単語 <code>apple</code> の名前と意味を <code>Word</code> 型の構造体 <code>w</code> へと格納し，<code>print_word()</code> 関数で表示している．</p>
+<p>このプログラムをコンパイルし，実行すると，以下の結果が得られる．</p>
+<div class="highlight" style="background: #272822"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-7-1">1</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-7-2">2</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-7-3">3</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-7-4">4</a></span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span style="color: #f92672; font-weight: bold">$ </span>gcc kadaiR3-1.c -o kadaiR3-1
+<a id="__codelineno-7-2" name="__codelineno-7-2"></a><span style="color: #f92672; font-weight: bold">$ </span>./kadaiR3-1
+<a id="__codelineno-7-3" name="__codelineno-7-3"></a><span style="color: #66d9ef">[apple]</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4"></a><span style="color: #66d9ef">fruit with red or yellow or green skin</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="_10">単語の追加</h3>
+<p>次に，リストへ単語を追加するための機能を関数 <code>add_word()</code> として実装する．
+<a href="#_5">データの追加</a> で述べた通り，新たなデータはリストの先頭に追加する．
+ここでは，名前の重複の可能性については一旦考えないこととして，与えられたデータをリストの先頭へ機械的に追加することにしよう．</p>
+<p>なお，リストの先頭にデータを追加するため，リストの先頭へのポインタ <code>head</code> の値を変更する必要がある．
+関数内で <code>head</code> を変更する方法としては，以下の 2 つがある．</p>
+<ul>
+<li>関数の戻り値として新たな先頭へのポインタを返して，変数 <code>head</code> に代入する．<ul>
+<li><code>head = add_word(...);</code></li>
+</ul>
+</li>
+<li>関数の引数として <code>head</code> のアドレスを渡して，関数内で値を更新する．<ul>
+<li><code>add_word(&amp;head, ...);</code></li>
+</ul>
+</li>
+</ul>
+<p>ここでは，前者の方法を採ることにする．</p>
+<h4 id="2">演習課題2</h4>
+<p>名前を表す文字列 <code>id</code>，意味を表す文字列 <code>def</code>，単語が格納されている線形リストの先頭へのポインタ <code>head</code> を引数とし，単語を新たにリストの先頭へと追加した上でリストの先頭の要素へのポインタを戻り値として返す関数 <code>add_word()</code> を作成せよ．</p>
+<div class="highlight" style="background: #272822"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">プロトタイプ宣言</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-8-1">1</a></span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span style="color: #f8f8f2">Word </span><span style="color: #f92672">*</span><span style="color: #a6e22e">add_word</span><span style="color: #f8f8f2">(</span><span style="color: #66d9ef">char</span><span style="color: #f8f8f2"> id[], </span><span style="color: #66d9ef">char</span><span style="color: #f8f8f2"> def[], Word </span><span style="color: #f92672">*</span><span style="color: #f8f8f2">head);</span>
+</code></pre></div></td></tr></table></div>
+<p><code>add_word()</code> 関数の呼び出し例をサンプルコード <a href="../sample/kadaiR3-2.c">kadaiR3-2.c</a> に示している．
+以下に <code>main</code> 関数を抜粋する．</p>
+<div class="highlight" style="background: #272822"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">kadaiR3-2.c から抜粋</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-9-1">1</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-9-2">2</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-9-3">3</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-9-4">4</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-9-5">5</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-9-6">6</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-9-7">7</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-9-8">8</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-9-9">9</a></span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span style="color: #66d9ef">int</span><span style="color: #f8f8f2"> </span><span style="color: #a6e22e">main</span><span style="color: #f8f8f2">(){</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2"></a><span style="color: #f8f8f2">    Word </span><span style="color: #f92672">*</span><span style="color: #f8f8f2">head </span><span style="color: #f92672">=</span><span style="color: #f8f8f2"> NULL;</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3"></a>
+<a id="__codelineno-9-4" name="__codelineno-9-4"></a><span style="color: #f8f8f2">    </span><span style="color: #66d9ef">char</span><span style="color: #f8f8f2"> new_id[</span><span style="color: #ae81ff">16</span><span style="color: #f8f8f2">] </span><span style="color: #f92672">=</span><span style="color: #f8f8f2"> </span><span style="color: #e6db74">&quot;apple&quot;</span><span style="color: #f8f8f2">;</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5"></a><span style="color: #f8f8f2">    </span><span style="color: #66d9ef">char</span><span style="color: #f8f8f2"> new_def[</span><span style="color: #ae81ff">256</span><span style="color: #f8f8f2">] </span><span style="color: #f92672">=</span><span style="color: #f8f8f2"> </span><span style="color: #e6db74">&quot;fruit with red or yellow or green skin&quot;</span><span style="color: #f8f8f2">;</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6"></a><span style="color: #f8f8f2">    head </span><span style="color: #f92672">=</span><span style="color: #f8f8f2"> add_word(new_id, new_def, head);</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7"></a>
+<a id="__codelineno-9-8" name="__codelineno-9-8"></a><span style="color: #f8f8f2">    print_word(head);</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9"></a><span style="color: #f8f8f2">}</span>
+</code></pre></div></td></tr></table></div>
+<p>このサンプルコードでは，単語 <code>apple</code> を <code>add_word()</code> 関数によってリストに登録し，リストの先頭に追加された要素を <code>print_word()</code> 関数によって表示している．</p>
+<p>このプログラムをコンパイルし，実行すると，以下の結果が得られる．</p>
+<div class="highlight" style="background: #272822"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-10-1">1</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-10-2">2</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-10-3">3</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-10-4">4</a></span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span style="color: #f92672; font-weight: bold">$ </span>gcc kadaiR3-2.c -o kadaiR3-2
+<a id="__codelineno-10-2" name="__codelineno-10-2"></a><span style="color: #f92672; font-weight: bold">$ </span>./kadaiR3-2
+<a id="__codelineno-10-3" name="__codelineno-10-3"></a><span style="color: #66d9ef">[apple]</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4"></a><span style="color: #66d9ef">fruit with red or yellow or green skin</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="_11">単語の検索</h3>
+<p>リストに登録された単語を検索するための機能を実装する．
+<a href="#_6">データの探索</a> で述べた通り，リストを先頭からチェックして，名前が等しい要素が見つかったらそのポインタを返す．
+要素が見つからなかった場合は <code>NULL</code> を返すことにする．</p>
+<h4 id="3">演習課題3</h4>
+<p>探したい要素の名前 <code>key</code> と要素が格納された線形リストの先頭へのポインタ <code>head</code> を引数とし，求める単語がリストに存在すればその要素へのポインタを戻り値として返し，存在しなければ <code>NULL</code> を戻り値として返す関数 <code>search_word()</code> を作成せよ．</p>
+<div class="highlight" style="background: #272822"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">プロトタイプ宣言</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-11-1">1</a></span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span style="color: #f8f8f2">Word </span><span style="color: #f92672">*</span><span style="color: #a6e22e">search_word</span><span style="color: #f8f8f2">(</span><span style="color: #66d9ef">char</span><span style="color: #f8f8f2"> key[], Word </span><span style="color: #f92672">*</span><span style="color: #f8f8f2">head);</span>
+</code></pre></div></td></tr></table></div>
+<p><code>search_word()</code> 関数の呼び出し例をサンプルコード <a href="../sample/kadaiR3-3.c">kadaiR3-3.c</a> に示している．
+以下に <code>main</code> 関数を抜粋する．</p>
+<div class="highlight" style="background: #272822"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">kadaiR3-3.c から抜粋</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-12-1"> 1</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-12-2"> 2</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-12-3"> 3</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-12-4"> 4</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-12-5"> 5</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-12-6"> 6</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-12-7"> 7</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-12-8"> 8</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-12-9"> 9</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-12-10">10</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-12-11">11</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-12-12">12</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-12-13">13</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-12-14">14</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-12-15">15</a></span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1"></a><span style="color: #66d9ef">int</span><span style="color: #f8f8f2"> </span><span style="color: #a6e22e">main</span><span style="color: #f8f8f2">(){</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2"></a><span style="color: #f8f8f2">    Word </span><span style="color: #f92672">*</span><span style="color: #f8f8f2">head </span><span style="color: #f92672">=</span><span style="color: #f8f8f2"> NULL, </span><span style="color: #f92672">*</span><span style="color: #f8f8f2">target;</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3"></a><span style="color: #f8f8f2">    </span><span style="color: #66d9ef">char</span><span style="color: #f8f8f2"> new_id[</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">][</span><span style="color: #ae81ff">16</span><span style="color: #f8f8f2">], new_def[</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">][</span><span style="color: #ae81ff">256</span><span style="color: #f8f8f2">];</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4"></a>
+<a id="__codelineno-12-5" name="__codelineno-12-5"></a><span style="color: #f8f8f2">    strcpy(new_id[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">], </span><span style="color: #e6db74">&quot;apple&quot;</span><span style="color: #f8f8f2">);</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6"></a><span style="color: #f8f8f2">    strcpy(new_def[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">], </span><span style="color: #e6db74">&quot;fruit with red or yellow or green skin&quot;</span><span style="color: #f8f8f2">);</span>
+<a id="__codelineno-12-7" name="__codelineno-12-7"></a><span style="color: #f8f8f2">    strcpy(new_id[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">], </span><span style="color: #e6db74">&quot;orange&quot;</span><span style="color: #f8f8f2">);</span>
+<a id="__codelineno-12-8" name="__codelineno-12-8"></a><span style="color: #f8f8f2">    strcpy(new_def[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">], </span><span style="color: #e6db74">&quot;round yellow to orange fruit of any of several citrus trees&quot;</span><span style="color: #f8f8f2">);</span>
+<a id="__codelineno-12-9" name="__codelineno-12-9"></a>
+<a id="__codelineno-12-10" name="__codelineno-12-10"></a><span style="color: #f8f8f2">    head </span><span style="color: #f92672">=</span><span style="color: #f8f8f2"> add_word(new_id[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">], new_def[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">], head);</span>
+<a id="__codelineno-12-11" name="__codelineno-12-11"></a><span style="color: #f8f8f2">    head </span><span style="color: #f92672">=</span><span style="color: #f8f8f2"> add_word(new_id[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">], new_def[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">], head);</span>
+<a id="__codelineno-12-12" name="__codelineno-12-12"></a>
+<a id="__codelineno-12-13" name="__codelineno-12-13"></a><span style="color: #f8f8f2">    target </span><span style="color: #f92672">=</span><span style="color: #f8f8f2"> search_word(</span><span style="color: #e6db74">&quot;orange&quot;</span><span style="color: #f8f8f2">, head);</span>
+<a id="__codelineno-12-14" name="__codelineno-12-14"></a><span style="color: #f8f8f2">    print_word(target);</span>
+<a id="__codelineno-12-15" name="__codelineno-12-15"></a><span style="color: #f8f8f2">}</span>
+</code></pre></div></td></tr></table></div>
+<p>このサンプルコードでは，二つの単語 <code>apple</code> と <code>orange</code> を <code>add_word()</code> 関数によってリストに登録した後で，<code>search_word()</code> 関数で単語 <code>orange</code> を検索し，<code>print_word()</code> 関数によって表示している．</p>
+<p>このプログラムをコンパイルし，実行すると，以下の結果が得られる．</p>
+<div class="highlight" style="background: #272822"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-13-1">1</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-13-2">2</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-13-3">3</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-13-4">4</a></span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1"></a><span style="color: #f92672; font-weight: bold">$ </span>gcc kadaiR3-3.c -o kadaiR3-3
+<a id="__codelineno-13-2" name="__codelineno-13-2"></a><span style="color: #f92672; font-weight: bold">$ </span>./kadaiR3-3
+<a id="__codelineno-13-3" name="__codelineno-13-3"></a><span style="color: #66d9ef">[orange]</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4"></a><span style="color: #66d9ef">round yellow to orange fruit of any of several citrus trees</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="_12">重複を考慮した単語の追加</h3>
+<p><code>add_word()</code> 関数では追加しようとしている単語がすでにリストに含まれているかどうかについては考慮していなかったが，先ほど作成した <code>search_word()</code> 関数を利用すれば重複の有無を確認することができる．</p>
+<h4 id="4">演習課題4</h4>
+<p>名前を表す文字列 <code>id</code>，意味を表す文字列 <code>def</code>，単語が格納されている線形リストの先頭へのポインタ <code>head</code> を引数とし，名前の重複をチェックした上で，重複していなければ新たにリストの先頭へと追加し，リストの先頭の要素へのポインタを戻り値として返す関数 <code>add_new_word()</code> を作成せよ．</p>
+<div class="highlight" style="background: #272822"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">プロトタイプ宣言</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-14-1">1</a></span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1"></a><span style="color: #f8f8f2">Word </span><span style="color: #f92672">*</span><span style="color: #a6e22e">add_new_word</span><span style="color: #f8f8f2">(</span><span style="color: #66d9ef">char</span><span style="color: #f8f8f2"> id[], </span><span style="color: #66d9ef">char</span><span style="color: #f8f8f2"> def[], Word </span><span style="color: #f92672">*</span><span style="color: #f8f8f2">head);</span>
+</code></pre></div></td></tr></table></div>
+<p><code>add_new_word()</code> 関数の呼び出し例をサンプルコード <a href="../sample/kadaiR3-4.c">kadaiR3-4.c</a> に示している．
+以下に <code>main</code> 関数を抜粋する．</p>
+<div class="highlight" style="background: #272822"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">kadaiR3-4.c から抜粋</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-15-1"> 1</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-15-2"> 2</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-15-3"> 3</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-15-4"> 4</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-15-5"> 5</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-15-6"> 6</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-15-7"> 7</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-15-8"> 8</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-15-9"> 9</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-15-10">10</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-15-11">11</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-15-12">12</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-15-13">13</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-15-14">14</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-15-15">15</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-15-16">16</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-15-17">17</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-15-18">18</a></span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1"></a><span style="color: #66d9ef">int</span><span style="color: #f8f8f2"> </span><span style="color: #a6e22e">main</span><span style="color: #f8f8f2">(){</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2"></a><span style="color: #f8f8f2">    </span><span style="color: #66d9ef">int</span><span style="color: #f8f8f2"> i;</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3"></a><span style="color: #f8f8f2">    Word </span><span style="color: #f92672">*</span><span style="color: #f8f8f2">head </span><span style="color: #f92672">=</span><span style="color: #f8f8f2"> NULL, </span><span style="color: #f92672">*</span><span style="color: #f8f8f2">temp;</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4"></a><span style="color: #f8f8f2">    </span><span style="color: #66d9ef">char</span><span style="color: #f8f8f2"> new_id[</span><span style="color: #ae81ff">3</span><span style="color: #f8f8f2">][</span><span style="color: #ae81ff">16</span><span style="color: #f8f8f2">], new_def[</span><span style="color: #ae81ff">3</span><span style="color: #f8f8f2">][</span><span style="color: #ae81ff">256</span><span style="color: #f8f8f2">];</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5"></a>
+<a id="__codelineno-15-6" name="__codelineno-15-6"></a><span style="color: #f8f8f2">    strcpy(new_id[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">], </span><span style="color: #e6db74">&quot;apple&quot;</span><span style="color: #f8f8f2">);</span>
+<a id="__codelineno-15-7" name="__codelineno-15-7"></a><span style="color: #f8f8f2">    strcpy(new_def[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">], </span><span style="color: #e6db74">&quot;fruit with red or yellow or green skin&quot;</span><span style="color: #f8f8f2">);</span>
+<a id="__codelineno-15-8" name="__codelineno-15-8"></a><span style="color: #f8f8f2">    strcpy(new_id[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">], </span><span style="color: #e6db74">&quot;orange&quot;</span><span style="color: #f8f8f2">);</span>
+<a id="__codelineno-15-9" name="__codelineno-15-9"></a><span style="color: #f8f8f2">    strcpy(new_def[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">], </span><span style="color: #e6db74">&quot;round yellow to orange fruit of any of several citrus trees&quot;</span><span style="color: #f8f8f2">);</span>
+<a id="__codelineno-15-10" name="__codelineno-15-10"></a><span style="color: #f8f8f2">    strcpy(new_id[</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">], </span><span style="color: #e6db74">&quot;orange&quot;</span><span style="color: #f8f8f2">);</span>
+<a id="__codelineno-15-11" name="__codelineno-15-11"></a><span style="color: #f8f8f2">    strcpy(new_def[</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">], </span><span style="color: #e6db74">&quot;any of a range of colors between red and yellow&quot;</span><span style="color: #f8f8f2">);</span>
+<a id="__codelineno-15-12" name="__codelineno-15-12"></a>
+<a id="__codelineno-15-13" name="__codelineno-15-13"></a><span style="color: #f8f8f2">    </span><span style="color: #66d9ef">for</span><span style="color: #f8f8f2"> (i </span><span style="color: #f92672">=</span><span style="color: #f8f8f2"> </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">; i </span><span style="color: #f92672">&lt;</span><span style="color: #f8f8f2"> </span><span style="color: #ae81ff">3</span><span style="color: #f8f8f2">; i</span><span style="color: #f92672">++</span><span style="color: #f8f8f2">){</span>
+<a id="__codelineno-15-14" name="__codelineno-15-14"></a><span style="color: #f8f8f2">        head </span><span style="color: #f92672">=</span><span style="color: #f8f8f2"> add_new_word(new_id[i], new_def[i], head);</span>
+<a id="__codelineno-15-15" name="__codelineno-15-15"></a><span style="color: #f8f8f2">    }</span>
+<a id="__codelineno-15-16" name="__codelineno-15-16"></a>
+<a id="__codelineno-15-17" name="__codelineno-15-17"></a><span style="color: #f8f8f2">    print_word(search_word(</span><span style="color: #e6db74">&quot;orange&quot;</span><span style="color: #f8f8f2"> , head));</span>
+<a id="__codelineno-15-18" name="__codelineno-15-18"></a><span style="color: #f8f8f2">}</span>
+</code></pre></div></td></tr></table></div>
+<p>このサンプルコードでは，単語 <code>apple</code> と <code>orange</code> を <code>add_new_word()</code> 関数によってリストに登録した後で，再度 <code>orange</code> を異なる意味とともに登録しようとしている．
+その後，<code>search_word()</code> 関数で単語 <code>orange</code> を検索しその結果を，<code>print_word()</code> 関数によって表示している．</p>
+<p>このプログラムをコンパイルし，実行すると，以下の結果が得られる．</p>
+<div class="highlight" style="background: #272822"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-16-1">1</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-16-2">2</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-16-3">3</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-16-4">4</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-16-5">5</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-16-6">6</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-16-7">7</a></span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1"></a><span style="color: #f92672; font-weight: bold">$ </span>gcc kadaiR3-4.c -o kadaiR3-4
+<a id="__codelineno-16-2" name="__codelineno-16-2"></a><span style="color: #f92672; font-weight: bold">$ </span>./kadaiR3-4
+<a id="__codelineno-16-3" name="__codelineno-16-3"></a><span style="color: #66d9ef">「apple」を登録しました．</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4"></a><span style="color: #66d9ef">「orange」を登録しました．</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5"></a><span style="color: #66d9ef">「orange」は既に登録されています．</span>
+<a id="__codelineno-16-6" name="__codelineno-16-6"></a><span style="color: #66d9ef">[orange]</span>
+<a id="__codelineno-16-7" name="__codelineno-16-7"></a><span style="color: #66d9ef">round yellow to orange fruit of any of several citrus trees</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="_13">単語の削除</h3>
+<p>リストに登録された単語を削除するための機能を実装する．
+<a href="#_7">データの削除</a> で述べた通り，対象となる単語を削除した後，前後の要素をポインタで接続してリストの形状を保つ．</p>
+<p>また，仮にリストの先頭の要素が削除対象だった場合は，リストの先頭へのポインタを変更する必要が生じる．
+そのため，<code>add_word()</code> 関数と同様に，新たなリストの先頭へのポインタを戻り値として返すことにする．</p>
+<h4 id="5">演習課題5</h4>
+<p>削除したい要素の名前 <code>key</code> と要素が格納された線形リストの先頭へのポインタ <code>head</code> を引数とし，存在すればそれを削除した上でリストの先頭の要素へのポインタを戻り値として返す関数 <code>delete_word()</code> を作成せよ．</p>
+<div class="highlight" style="background: #272822"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">プロトタイプ宣言</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-17-1">1</a></span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1"></a><span style="color: #f8f8f2">Word </span><span style="color: #f92672">*</span><span style="color: #a6e22e">delete_word</span><span style="color: #f8f8f2">(</span><span style="color: #66d9ef">char</span><span style="color: #f8f8f2"> key[], Word </span><span style="color: #f92672">*</span><span style="color: #f8f8f2">head);</span>
+</code></pre></div></td></tr></table></div>
+<p><code>delete_word()</code> 関数の呼び出し例をサンプルコード <a href="../sample/kadaiR3-5.c">kadaiR3-5.c</a> に示している．
+以下に <code>main</code> 関数を抜粋する．</p>
+<div class="highlight" style="background: #272822"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">kadaiR3-5.c から抜粋</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-18-1"> 1</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-18-2"> 2</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-18-3"> 3</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-18-4"> 4</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-18-5"> 5</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-18-6"> 6</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-18-7"> 7</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-18-8"> 8</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-18-9"> 9</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-18-10">10</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-18-11">11</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-18-12">12</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-18-13">13</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-18-14">14</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-18-15">15</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-18-16">16</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-18-17">17</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-18-18">18</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-18-19">19</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-18-20">20</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-18-21">21</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-18-22">22</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-18-23">23</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-18-24">24</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-18-25">25</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-18-26">26</a></span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1"></a><span style="color: #66d9ef">int</span><span style="color: #f8f8f2"> </span><span style="color: #a6e22e">main</span><span style="color: #f8f8f2">(){</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2"></a><span style="color: #f8f8f2">    Word </span><span style="color: #f92672">*</span><span style="color: #f8f8f2">head </span><span style="color: #f92672">=</span><span style="color: #f8f8f2"> NULL, </span><span style="color: #f92672">*</span><span style="color: #f8f8f2">temp;</span>
+<a id="__codelineno-18-3" name="__codelineno-18-3"></a><span style="color: #f8f8f2">    </span><span style="color: #66d9ef">char</span><span style="color: #f8f8f2"> new_id[</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">][</span><span style="color: #ae81ff">16</span><span style="color: #f8f8f2">], new_def[</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">][</span><span style="color: #ae81ff">256</span><span style="color: #f8f8f2">];</span>
+<a id="__codelineno-18-4" name="__codelineno-18-4"></a>
+<a id="__codelineno-18-5" name="__codelineno-18-5"></a><span style="color: #f8f8f2">    strcpy(new_id[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">], </span><span style="color: #e6db74">&quot;apple&quot;</span><span style="color: #f8f8f2">);</span>
+<a id="__codelineno-18-6" name="__codelineno-18-6"></a><span style="color: #f8f8f2">    strcpy(new_def[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">], </span><span style="color: #e6db74">&quot;fruit with red or yellow or green skin&quot;</span><span style="color: #f8f8f2">);</span>
+<a id="__codelineno-18-7" name="__codelineno-18-7"></a><span style="color: #f8f8f2">    strcpy(new_id[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">], </span><span style="color: #e6db74">&quot;orange&quot;</span><span style="color: #f8f8f2">);</span>
+<a id="__codelineno-18-8" name="__codelineno-18-8"></a><span style="color: #f8f8f2">    strcpy(new_def[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">], </span><span style="color: #e6db74">&quot;round yellow to orange fruit of any of several citrus trees&quot;</span><span style="color: #f8f8f2">);</span>
+<a id="__codelineno-18-9" name="__codelineno-18-9"></a>
+<a id="__codelineno-18-10" name="__codelineno-18-10"></a><span style="color: #f8f8f2">    head </span><span style="color: #f92672">=</span><span style="color: #f8f8f2"> add_word(new_id[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">], new_def[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">], head);</span>
+<a id="__codelineno-18-11" name="__codelineno-18-11"></a><span style="color: #f8f8f2">    head </span><span style="color: #f92672">=</span><span style="color: #f8f8f2"> add_word(new_id[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">], new_def[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">], head);</span>
+<a id="__codelineno-18-12" name="__codelineno-18-12"></a><span style="color: #f8f8f2">    head </span><span style="color: #f92672">=</span><span style="color: #f8f8f2"> delete_word(</span><span style="color: #e6db74">&quot;orange&quot;</span><span style="color: #f8f8f2">, head);</span>
+<a id="__codelineno-18-13" name="__codelineno-18-13"></a>
+<a id="__codelineno-18-14" name="__codelineno-18-14"></a><span style="color: #f8f8f2">    temp </span><span style="color: #f92672">=</span><span style="color: #f8f8f2"> search_word(</span><span style="color: #e6db74">&quot;apple&quot;</span><span style="color: #f8f8f2">, head);</span>
+<a id="__codelineno-18-15" name="__codelineno-18-15"></a><span style="color: #f8f8f2">    </span><span style="color: #66d9ef">if</span><span style="color: #f8f8f2"> (temp </span><span style="color: #f92672">!=</span><span style="color: #f8f8f2"> NULL){</span>
+<a id="__codelineno-18-16" name="__codelineno-18-16"></a><span style="color: #f8f8f2">        print_word(temp);</span>
+<a id="__codelineno-18-17" name="__codelineno-18-17"></a><span style="color: #f8f8f2">    } </span><span style="color: #66d9ef">else</span><span style="color: #f8f8f2"> {</span>
+<a id="__codelineno-18-18" name="__codelineno-18-18"></a><span style="color: #f8f8f2">        printf(</span><span style="color: #e6db74">&quot;「apple」は登録されていません．&quot;</span><span style="color: #f8f8f2">);</span>
+<a id="__codelineno-18-19" name="__codelineno-18-19"></a><span style="color: #f8f8f2">    }</span>
+<a id="__codelineno-18-20" name="__codelineno-18-20"></a><span style="color: #f8f8f2">    temp </span><span style="color: #f92672">=</span><span style="color: #f8f8f2"> search_word(</span><span style="color: #e6db74">&quot;orange&quot;</span><span style="color: #f8f8f2">, head);</span>
+<a id="__codelineno-18-21" name="__codelineno-18-21"></a><span style="color: #f8f8f2">    </span><span style="color: #66d9ef">if</span><span style="color: #f8f8f2"> (temp </span><span style="color: #f92672">!=</span><span style="color: #f8f8f2"> NULL){</span>
+<a id="__codelineno-18-22" name="__codelineno-18-22"></a><span style="color: #f8f8f2">        print_word(temp);</span>
+<a id="__codelineno-18-23" name="__codelineno-18-23"></a><span style="color: #f8f8f2">    } </span><span style="color: #66d9ef">else</span><span style="color: #f8f8f2"> {</span>
+<a id="__codelineno-18-24" name="__codelineno-18-24"></a><span style="color: #f8f8f2">        printf(</span><span style="color: #e6db74">&quot;「orange」は登録されていません．&quot;</span><span style="color: #f8f8f2">);</span>
+<a id="__codelineno-18-25" name="__codelineno-18-25"></a><span style="color: #f8f8f2">    }</span>
+<a id="__codelineno-18-26" name="__codelineno-18-26"></a><span style="color: #f8f8f2">}</span>
+</code></pre></div></td></tr></table></div>
+<p>このサンプルコードでは，単語 <code>apple</code> と <code>orange</code> を <code>add_word()</code> 関数によってリストに登録した後で，<code>orange</code> を削除している．
+その後，<code>search_word()</code> 関数で単語 <code>apple</code> と <code>orange</code> を検索し，リストに存在するならその結果を，<code>print_word()</code> 関数によって表示し，存在しないならその旨を表示している．</p>
+<p>このプログラムをコンパイルし，実行すると，以下の結果が得られる．</p>
+<div class="highlight" style="background: #272822"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-19-1">1</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-19-2">2</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-19-3">3</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-19-4">4</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-19-5">5</a></span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1"></a><span style="color: #f92672; font-weight: bold">$ </span>gcc kadaiR3-5.c -o kadaiR3-5
+<a id="__codelineno-19-2" name="__codelineno-19-2"></a><span style="color: #f92672; font-weight: bold">$ </span>./kadaiR3-5
+<a id="__codelineno-19-3" name="__codelineno-19-3"></a><span style="color: #66d9ef">[apple]</span>
+<a id="__codelineno-19-4" name="__codelineno-19-4"></a><span style="color: #66d9ef">fruit with red or yellow or green skin</span>
+<a id="__codelineno-19-5" name="__codelineno-19-5"></a><span style="color: #66d9ef">「orange」は登録されていません．</span>
+</code></pre></div></td></tr></table></div>
+<h4 id="6">演習課題6</h4>
+<p>以上の関数を用いて，線形リストによる辞書機能を完成させよ．</p>
+<h2 id="2_1">課題2 二分探索木を用いた辞書機能の実現</h2>
+<p>この課題では，随時データの追加・削除を行うため，データ構造として二分探索木を用いる．</p>
+<h3 id="_14">二分探索木</h3>
+<p>二分探索木は図5に示すように，それぞれの頂点が左右2つの子をもつ構造となる．</p>
+<p><center>
+<br>
+<img src="../img/r3/8-list.pdf"></p>
+<p>図5：二分探索木
+<br>
+</center></p>
+<p>二分探索木をCで実装する場合，それぞれの要素 <code>Node</code> をデータ <code>key</code> と ポインタ <code>left</code>，<code>right</code> という3つのメンバをもつ構造体として定義する．
+<code>left</code> および <code>right</code> は <code>Node</code> を指すポインタであり，二分探索木の要素を連結するために用いる．</p>
+<p><code>int</code> 型のデータをもつ二分探索木であれば，<code>Node</code> は以下のように定義される．</p>
+<div class="highlight" style="background: #272822"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">二分探索木の要素を表す構造体 Node の定義</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-20-1">1</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-20-2">2</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-20-3">3</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-20-4">4</a></span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1"></a><span style="color: #66d9ef">typedef</span><span style="color: #f8f8f2"> </span><span style="color: #66d9ef">struct</span><span style="color: #f8f8f2"> </span><span style="color: #a6e22e">node</span><span style="color: #f8f8f2">{</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2"></a><span style="color: #f8f8f2">    </span><span style="color: #66d9ef">int</span><span style="color: #f8f8f2"> key;</span>
+<a id="__codelineno-20-3" name="__codelineno-20-3"></a><span style="color: #f8f8f2">    </span><span style="color: #66d9ef">struct</span><span style="color: #f8f8f2"> </span><span style="color: #a6e22e">node</span><span style="color: #f8f8f2"> </span><span style="color: #f92672">*</span><span style="color: #f8f8f2">left, </span><span style="color: #f92672">*</span><span style="color: #f8f8f2">right;</span>
+<a id="__codelineno-20-4" name="__codelineno-20-4"></a><span style="color: #f8f8f2">} Node;</span>
+</code></pre></div></td></tr></table></div>
+<p>二分探索木のすべての頂点 <script type="math/tex">n</script> は，以下の関係を満たす必要がある．</p>
+<ul>
+<li>左の部分木には，<script type="math/tex">n</script> より小さい要素のみが含まれる．</li>
+<li>右の部分木には，<script type="math/tex">n</script> より大きい要素のみが含まれる．</li>
+</ul>
+<p>図5の二分探索木は <code>1</code>, <code>3</code>, <code>4</code>, <code>8</code> の 4 つの値をもつが，図6(a)に示すように，値 <code>3</code> をもつ頂点 <script type="math/tex">n</script> の左部分木には <script type="math/tex">n</script> より小さい値 <code>1</code> が，右部分木には <script type="math/tex">n</script> より大きい値 <code>4</code> と <code>8</code> が含まれている．
+この関係は部分木内の頂点間でも同様に成り立っており，図6(b)に示すように，値 <code>8</code> をもつ頂点の左部分木に，より小さい値 <code>4</code> が含まれている．</p>
+<p><center>
+<br>
+<img src="../img/r3/9-list1.pdf">
+<br>
+(a)
+<br><br>
+<img src="../img/r3/9-list2.pdf">
+<br>
+(b)
+<br>
+図6：二分探索木の頂点間の関係
+<br>
+</center></p>
+<p>二分探索木に対してデータの追加および削除を行う際には，上記の関係が保存されていなければならない．</p>
+<h3 id="_15">二分探索木のデータの探索</h3>
+<p>上述のとおり，この関係は部分木内の頂点でも同様に成り立つため，二分探索木に対して要素の探索を行う際には，現在参照している頂点の値 <code>key</code> が求める要素 <code>val</code> でなかった場合，<code>val &gt; key</code> ならば左の部分木，<code>val &lt; key</code> ならば右の部分木に対してのみ探索を行えばよい．
+このように，探索の際に全ての要素をチェックする必要がないため，計算量を少なくできるのが二分探索木の利点である．</p>
+<h3 id="_16">二分探索木へのデータの追加</h3>
+<p>二分探索木に新たな要素 <code>val</code> を追加する際には，探索と同様に <code>val</code> と現在の頂点の <code>key</code> を比較し，<code>val &gt; key</code> ならば左の部分木，<code>val &lt; key</code> ならば右の部分木に対して再度探索を繰り返す．
+そして，最終的に探索先が <code>NULL</code> となったとき，その場所が要素 <code>val</code> を追加すべき場所となる．</p>
+<p>例として，図5の二分探索木に新しく要素 <code>6</code> を追加する場合を考える．</p>
+<p><center>
+<br>
+<img src="../img/r3/10-list1.pdf">
+<br>
+(a)
+<br><br>
+<img src="../img/r3/10-list2.pdf">
+<br>
+(b)
+<br>
+図7：二分探索木へのデータの追加
+<br>
+</center></p>
+<p>図7(a)に示すように，各頂点との比較を繰り返した結果，追加すべき場所は要素 <code>4</code> の右の子要素となる．
+要素 <code>6</code> を追加した後の二分探索木の状態は図7(b)のようになる．</p>
+<h3 id="_17">二分探索木のデータの削除</h3>
+<p>二分探索木からデータを削除するための処理は，線形リストに比べて少し複雑である．
+削除の際の処理は，削除対象の要素 <code>val</code> をもつ頂点（以下，簡単に頂点 <script type="math/tex">v</script> という）の子の個数によって異なる．</p>
+<ul>
+<li>
+<p>頂点 <script type="math/tex">v</script> が子をもたない場合</p>
+<ul>
+<li>
+<p>頂点 <script type="math/tex">v</script> を削除するだけでよい．</p>
+<p><img src="../img/r3/11-list1.pdf"></p>
+</li>
+</ul>
+</li>
+<li>
+<p>頂点 <script type="math/tex">v</script> が子を一つだけもつ場合</p>
+<ul>
+<li>
+<p>頂点 <script type="math/tex">v</script> を削除した上で，頂点 <script type="math/tex">v</script> へのポインタを頂点 <script type="math/tex">v</script> の子へ繋ぐ．</p>
+<p><img src="../img/r3/11-list2.pdf"></p>
+</li>
+</ul>
+</li>
+<li>
+<p>頂点 <script type="math/tex">v</script> が子を二つもつ場合</p>
+<ul>
+<li>
+<p>頂点 <script type="math/tex">v</script> の右の部分木で最も小さい値をもつ頂点 <script type="math/tex">s</script> を頂点 <script type="math/tex">v</script> の代わりに配置する．</p>
+<p><img src="../img/r3/11-list3.pdf"></p>
+<p>このような頂点 <script type="math/tex">s</script> は，頂点 <script type="math/tex">v</script> の右の部分木を左へ左へと探索することで見つけることができる．
+頂点 <script type="math/tex">s</script> は頂点 <script type="math/tex">v</script> の左の部分木のどの要素よりも大きく，右の部分木のどの要素よりも小さいため， <script type="math/tex">s</script> を <script type="math/tex">v</script> の代わりに配置することで二分探索木の条件を保つことができる．</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="_18">データ構造</h3>
+<p>辞書の単語を表し，二分探索木を構成する要素となる構造体 <code>Word_bst</code> を以下のように定義する．</p>
+<div class="highlight" style="background: #272822"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-21-1">1</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-21-2">2</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-21-3">3</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-21-4">4</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-21-5">5</a></span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1"></a><span style="color: #66d9ef">typedef</span><span style="color: #f8f8f2"> </span><span style="color: #66d9ef">struct</span><span style="color: #f8f8f2"> {</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2"></a><span style="color: #f8f8f2">    </span><span style="color: #66d9ef">char</span><span style="color: #f8f8f2"> id[</span><span style="color: #ae81ff">16</span><span style="color: #f8f8f2">];</span>
+<a id="__codelineno-21-3" name="__codelineno-21-3"></a><span style="color: #f8f8f2">    </span><span style="color: #66d9ef">char</span><span style="color: #f8f8f2"> def[</span><span style="color: #ae81ff">256</span><span style="color: #f8f8f2">];</span>
+<a id="__codelineno-21-4" name="__codelineno-21-4"></a><span style="color: #f8f8f2">    Word </span><span style="color: #f92672">*</span><span style="color: #f8f8f2">left, </span><span style="color: #f92672">*</span><span style="color: #f8f8f2">right;</span>
+<a id="__codelineno-21-5" name="__codelineno-21-5"></a><span style="color: #f8f8f2">} Word_bst;</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="2_2">課題2 プログラムの実装</h2>
+<h4 id="7">演習課題7</h4>
+<p>関数 <code>print_word()</code> を，データ構造として二分探索木を扱えるよう修正し，新たに <code>print_word_bst()</code>として定義せよ．</p>
+<div class="highlight" style="background: #272822"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">プロトタイプ宣言</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-22-1">1</a></span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1"></a><span style="color: #66d9ef">void</span><span style="color: #f8f8f2"> </span><span style="color: #a6e22e">print_word_bst</span><span style="color: #f8f8f2">(Word_bst </span><span style="color: #f92672">*</span><span style="color: #f8f8f2">p);</span>
+</code></pre></div></td></tr></table></div>
+<h4 id="8">演習課題8</h4>
+<p>関数 <code>search_word()</code> を，データ構造として二分探索木を扱えるよう修正し，新たに <code>search_word_bst()</code> として定義せよ．</p>
+<div class="highlight" style="background: #272822"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">プロトタイプ宣言</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-23-1">1</a></span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1"></a><span style="color: #f8f8f2">Word_bst </span><span style="color: #f92672">*</span><span style="color: #a6e22e">search_word_bst</span><span style="color: #f8f8f2">(</span><span style="color: #66d9ef">char</span><span style="color: #f8f8f2"> key[], Word_bst </span><span style="color: #f92672">*</span><span style="color: #f8f8f2">head);</span>
+</code></pre></div></td></tr></table></div>
+<h4 id="9">演習課題9</h4>
+<p>関数 <code>add_new_word()</code> を，データ構造として二分探索木を扱えるよう修正し，新たに <code>add_word_bst()</code>として定義せよ． </p>
+<div class="highlight" style="background: #272822"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">プロトタイプ宣言</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-24-1">1</a></span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1"></a><span style="color: #f8f8f2">Word_bst </span><span style="color: #f92672">*</span><span style="color: #a6e22e">add_word_bst</span><span style="color: #f8f8f2">(</span><span style="color: #66d9ef">char</span><span style="color: #f8f8f2"> id[], </span><span style="color: #66d9ef">char</span><span style="color: #f8f8f2"> def[], Word_bst </span><span style="color: #f92672">*</span><span style="color: #f8f8f2">head);</span>
+</code></pre></div></td></tr></table></div>
+<h4 id="10">演習課題10</h4>
+<p>関数 <code>delete_word()</code> を，データ構造として二分探索木を扱えるよう修正し，新たに <code>delete_word_bst()</code> として定義せよ．</p>
+<div class="highlight" style="background: #272822"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">プロトタイプ宣言</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-25-1">1</a></span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1"></a><span style="color: #f8f8f2">Word_bst </span><span style="color: #f92672">*</span><span style="color: #a6e22e">delete_word_bst</span><span style="color: #f8f8f2">(</span><span style="color: #66d9ef">char</span><span style="color: #f8f8f2"> key[], Word_bst </span><span style="color: #f92672">*</span><span style="color: #f8f8f2">head);</span>
+</code></pre></div></td></tr></table></div>
+<h4 id="11">演習課題11</h4>
+<p>以上の関数を用いて，二分探索木による辞書機能を完成させよ．</p>
+
+
+
+
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../lec02/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 課題R2" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              課題R2
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../lec04/" class="md-footer__link md-footer__link--next" aria-label="Next: 課題R4" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              課題R4
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.annotate"], "search": "../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.2ab50757.min.js"></script>
+      
+        <script src="../js/extra.js"></script>
+      
+        <script src="../js/config.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS_CHTML"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+      
+    
+  </body>
+</html>

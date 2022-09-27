@@ -1,0 +1,1089 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.4.4">
+    
+    
+      
+        <title>課題R1 - ソフトウェア演習II</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6b80c2a2.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
+    
+      <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:600,800">
+    
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+    
+      <link rel="stylesheet" href="../css/custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#r-1-tokyo-parking" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="ソフトウェア演習II" class="md-header__button md-logo" aria-label="ソフトウェア演習II" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ソフトウェア演習II
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              課題R1
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="ソフトウェア演習II" class="md-nav__button md-logo" aria-label="ソフトウェア演習II" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    ソフトウェア演習II
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Top
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          課題R1
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        課題R1
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    課題の概要
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tokyo-parking" class="md-nav__link">
+    TOKYO PARKING
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    処理の流れ
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    データ構造
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    プログラムの実装
+  </a>
+  
+    <nav class="md-nav" aria-label="プログラムの実装">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    初期配置の定義
+  </a>
+  
+    <nav class="md-nav" aria-label="初期配置の定義">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    演習課題1
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    ボードの表示
+  </a>
+  
+    <nav class="md-nav" aria-label="ボードの表示">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    演習課題2
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    操作の入力
+  </a>
+  
+    <nav class="md-nav" aria-label="操作の入力">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    演習課題3
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    無効な操作の判定
+  </a>
+  
+    <nav class="md-nav" aria-label="無効な操作の判定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    演習課題4
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    ボードの更新
+  </a>
+  
+    <nav class="md-nav" aria-label="ボードの更新">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    演習課題5
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    終了判定
+  </a>
+  
+    <nav class="md-nav" aria-label="終了判定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    演習課題6
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    演習課題7
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lec02/" class="md-nav__link">
+        課題R2
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lec03/" class="md-nav__link">
+        課題R3
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lec04/" class="md-nav__link">
+        課題R4
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    課題の概要
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tokyo-parking" class="md-nav__link">
+    TOKYO PARKING
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    処理の流れ
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    データ構造
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    プログラムの実装
+  </a>
+  
+    <nav class="md-nav" aria-label="プログラムの実装">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    初期配置の定義
+  </a>
+  
+    <nav class="md-nav" aria-label="初期配置の定義">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    演習課題1
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    ボードの表示
+  </a>
+  
+    <nav class="md-nav" aria-label="ボードの表示">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    演習課題2
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    操作の入力
+  </a>
+  
+    <nav class="md-nav" aria-label="操作の入力">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    演習課題3
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    無効な操作の判定
+  </a>
+  
+    <nav class="md-nav" aria-label="無効な操作の判定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    演習課題4
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    ボードの更新
+  </a>
+  
+    <nav class="md-nav" aria-label="ボードの更新">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    演習課題5
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    終了判定
+  </a>
+  
+    <nav class="md-nav" aria-label="終了判定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    演習課題6
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    演習課題7
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="r-1-tokyo-parking">課題 R-1 「TOKYO PARKING」</h1>
+<h2 id="_1">課題の概要</h2>
+<p>この課題では，TOKYO PARKING（駐車場パズル）を C プログラム <code>tokyoparking.c</code> として実装することを目的とする．</p>
+<h2 id="tokyo-parking">TOKYO PARKING</h2>
+<p>TOKYO PARKING のルールは以下の通りである．</p>
+<ul>
+<li>開始時には，ボード上に決められた配置で車（のコマ）が置かれている</li>
+<li>出口の場所は決められている</li>
+<li>定められた車を出口まで動かすとクリアとなる</li>
+<li>車は縦または横向きに配置されていて，前後にしか動けない</li>
+<li>車の向きを変えることはできない</li>
+<li>既に他の車がいる場所には動けない</li>
+</ul>
+<p>この課題では，標準入出力を用いて，車と移動方向の指定とボードの表示を行う．
+「移動させる車の指定」→「移動方向の指定」という手順で入力を行い，更新されたボードの情報を出力する．
+したがって，このプログラムを実行したときの標準入出力上の表示は以下のようになる．</p>
+<div class="highlight" style="background: #272822"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-0-1"> 1</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-0-2"> 2</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-0-3"> 3</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-0-4"> 4</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-0-5"> 5</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-0-6"> 6</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-0-7"> 7</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-0-8"> 8</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-0-9"> 9</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-0-10">10</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-0-11">11</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-0-12">12</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-0-13">13</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-0-14">14</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-0-15">15</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-0-16">16</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-0-17">17</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-0-18">18</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-0-19">19</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-0-20">20</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-0-21">21</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-0-22">22</a></span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span style="color: #f92672; font-weight: bold">$ </span>./tokyoparking
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span style="color: #66d9ef">「あ」の車を出口まで動かしてください．</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span style="color: #66d9ef">＋＋＋＋＋＋＋＋</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span style="color: #66d9ef">＋・・・・い・＋</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span style="color: #66d9ef">＋・・・・い・＋</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span style="color: #66d9ef">＋・・ああい・＋</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span style="color: #66d9ef">＋・・・う・・＋</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a><span style="color: #66d9ef">＋・・・うええ＋</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9"></a><span style="color: #66d9ef">＋・・・・・・＋</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10"></a><span style="color: #66d9ef">＋＋＋＋＋＋＋＋</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11"></a><span style="color: #66d9ef">どの車を動かしますか？（あ:1,い:2,う:3,え:4）4</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12"></a><span style="color: #66d9ef">どの方向に動かしますか？（↑:1,↓:2,キャンセル:0）2</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13"></a><span style="color: #66d9ef">＋＋＋＋＋＋＋＋</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14"></a><span style="color: #66d9ef">＋・・・・い・＋</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15"></a><span style="color: #66d9ef">＋・・・・い・＋</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16"></a><span style="color: #66d9ef">＋・・ああい・＋</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17"></a><span style="color: #66d9ef">＋・・・・・・＋</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18"></a><span style="color: #66d9ef">＋・・・うええ＋</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19"></a><span style="color: #66d9ef">＋・・・う・・＋</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20"></a><span style="color: #66d9ef">＋＋＋＋＋＋＋＋</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21"></a><span style="color: #66d9ef">どの車を動かしますか？（あ:1,い:2,う:3,え:4）</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22"></a><span style="color: #66d9ef">：</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="_2">処理の流れ</h2>
+<p>TOKYO PARKING を実現するプログラムの処理の流れは以下の通りとなる．</p>
+<ol>
+<li>初期配置を定義する</li>
+<li>現在のボードの状態を表示する</li>
+<li>操作として「動かす車と向き」を標準入出力から読み取る</li>
+<li>可能な動作であるか判定する<ol>
+<li>可能な動作であるならば，5へ</li>
+<li>可能な動作でないならば，1へ</li>
+</ol>
+</li>
+<li>操作に従ってボードを更新する</li>
+<li>目的の車が出口に到達しているか判定する<ol>
+<li>到達していれば，ゲームクリアとしてプログラムを終了する</li>
+<li>到達していなければ，2へ</li>
+</ol>
+</li>
+</ol>
+<p>これを踏まえて，TOKYO PARKING を C プログラムとして実装する．</p>
+<p>なお，初期配置は以下の図1に示すものとする．</p>
+<p><center>
+<img src="../img/r1/r1-1.pdf">
+<br>
+図1：初期配置
+</center></p>
+<h2 id="_3">データ構造</h2>
+<p>まずはデータ構造を決める必要がある．
+ボードは，整数型の二次元配列<code>board[HEIGHT+2][WIDTH+2]</code>として定義する．
+パズルの縦横のマス目の数<code>HEIGHT</code>および<code>WIDTH</code>は，<code>#define</code>を用いてマクロ定義する．
+（今回はボードのサイズは６×６としておく．）</p>
+<p><code>board[i][j]</code>の値は，ボードの左から i 番目，上から j 番目のマスの状態を表しており，それぞれ以下のように対応づけることにする．</p>
+<ul>
+<li><code>0</code>：車が配置されておらず，移動可能なマス</li>
+<li><code>1</code>, <code>2</code>, ...（車に対応した番号）：既に車が配置されており，移動不可能なマス</li>
+<li><code>-1</code>：ボード外周の移動不可能なマス</li>
+</ul>
+<p>ここで車に対応づける番号は，出口へと移動させるべき車を<code>1</code>とし，それ以外の車を<code>2</code>, <code>3</code>, ... と割り当てることにする．
+例として，図1のボードに対応する配列<code>board</code>の要素の値は図2のようになる．</p>
+<p><center>
+<img src="../img/r1/r1-2.pdf">
+<br>
+図2：初期配置に対応した配列 <code>board</code> の要素の値
+</center></p>
+<p>また，車が縦向きか横向きかのいずれかによって，移動可能な方向は異なる．
+ゲームのプレイ中に車の向きが変わることはないため，車の向きの情報はグローバルに定義された配列<code>is_vertical[MAX+1]</code>へとあらかじめ格納しておくことにしよう．
+ここで<code>MAX</code>は車の台数とし，<code>#define</code>を用いてマクロ定義しておく．
+<code>is_vertical[i]</code>の値は車<code>i</code>が縦向きなら<code>1</code>，横向きなら<code>0</code>とする．
+さらに初期配置についても，二次元配列 <code>init[HEIGHT+2][WIDTH+2]</code> としてグローバルに定義しておく．</p>
+<div class="admonition tip">
+<p class="admonition-title">二次元配列の初期値の設定</p>
+<p>4×4 の整数型の二次元配列の値を 0 で初期化する場合は以下のように記述する．
+<div class="highlight" style="background: #272822"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-1-1">1</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-1-2">2</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-1-3">3</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-1-4">4</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-1-5">5</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-1-6">6</a></span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span style="color: #66d9ef">int</span><span style="color: #f8f8f2"> array1[</span><span style="color: #ae81ff">4</span><span style="color: #f8f8f2">][</span><span style="color: #ae81ff">4</span><span style="color: #f8f8f2">] </span><span style="color: #f92672">=</span><span style="color: #f8f8f2"> {</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span style="color: #f8f8f2">    {</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">, </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">, </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">, </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">},</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span style="color: #f8f8f2">    {</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">, </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">, </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">, </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">},</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span style="color: #f8f8f2">    {</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">, </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">, </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">, </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">},</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a><span style="color: #f8f8f2">    {</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">, </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">, </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">, </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">}</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a><span style="color: #f8f8f2">};</span>
+</code></pre></div></td></tr></table></div></p>
+</div>
+<div class="highlight" style="background: #272822"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-2-1"> 1</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-2-2"> 2</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-2-3"> 3</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-2-4"> 4</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-2-5"> 5</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-2-6"> 6</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-2-7"> 7</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-2-8"> 8</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-2-9"> 9</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-2-10">10</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-2-11">11</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-2-12">12</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-2-13">13</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-2-14">14</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-2-15">15</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-2-16">16</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-2-17">17</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-2-18">18</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-2-19">19</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-2-20">20</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-2-21">21</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-2-22">22</a></span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span style="color: #75715e">#define HEIGHT 6</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span style="color: #75715e">#define WIDTH 6</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span style="color: #75715e">#define MAX 4</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a><span style="color: #75715e">// 初期配置</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a><span style="color: #66d9ef">int</span><span style="color: #f8f8f2"> init[HEIGHT </span><span style="color: #f92672">+</span><span style="color: #f8f8f2"> </span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">][WIDTH </span><span style="color: #f92672">+</span><span style="color: #f8f8f2"> </span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">] </span><span style="color: #f92672">=</span><span style="color: #f8f8f2"> {</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7"></a><span style="color: #f8f8f2">    {</span><span style="color: #ae81ff">-1</span><span style="color: #f8f8f2">, </span><span style="color: #ae81ff">-1</span><span style="color: #f8f8f2">, </span><span style="color: #ae81ff">-1</span><span style="color: #f8f8f2">, </span><span style="color: #ae81ff">-1</span><span style="color: #f8f8f2">, </span><span style="color: #ae81ff">-1</span><span style="color: #f8f8f2">, </span><span style="color: #ae81ff">-1</span><span style="color: #f8f8f2">, </span><span style="color: #ae81ff">-1</span><span style="color: #f8f8f2">, </span><span style="color: #ae81ff">-1</span><span style="color: #f8f8f2">},</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8"></a><span style="color: #f8f8f2">    {</span><span style="color: #ae81ff">-1</span><span style="color: #f8f8f2">,  </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,  </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,  </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,  </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,  </span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">,  </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">, </span><span style="color: #ae81ff">-1</span><span style="color: #f8f8f2">},</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9"></a><span style="color: #f8f8f2">    {</span><span style="color: #ae81ff">-1</span><span style="color: #f8f8f2">,  </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,  </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,  </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,  </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,  </span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">,  </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">, </span><span style="color: #ae81ff">-1</span><span style="color: #f8f8f2">},</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10"></a><span style="color: #f8f8f2">    {</span><span style="color: #ae81ff">-1</span><span style="color: #f8f8f2">,  </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,  </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,  </span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">,  </span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">,  </span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">,  </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,  </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">},</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11"></a><span style="color: #f8f8f2">    {</span><span style="color: #ae81ff">-1</span><span style="color: #f8f8f2">,  </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,  </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,  </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,  </span><span style="color: #ae81ff">4</span><span style="color: #f8f8f2">,  </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,  </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">, </span><span style="color: #ae81ff">-1</span><span style="color: #f8f8f2">},</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12"></a><span style="color: #f8f8f2">    {</span><span style="color: #ae81ff">-1</span><span style="color: #f8f8f2">,  </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,  </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,  </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,  </span><span style="color: #ae81ff">4</span><span style="color: #f8f8f2">,  </span><span style="color: #ae81ff">3</span><span style="color: #f8f8f2">,  </span><span style="color: #ae81ff">3</span><span style="color: #f8f8f2">, </span><span style="color: #ae81ff">-1</span><span style="color: #f8f8f2">},</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13"></a><span style="color: #f8f8f2">    {</span><span style="color: #ae81ff">-1</span><span style="color: #f8f8f2">,  </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,  </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,  </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,  </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,  </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">,  </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">, </span><span style="color: #ae81ff">-1</span><span style="color: #f8f8f2">},</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14"></a><span style="color: #f8f8f2">    {</span><span style="color: #ae81ff">-1</span><span style="color: #f8f8f2">, </span><span style="color: #ae81ff">-1</span><span style="color: #f8f8f2">, </span><span style="color: #ae81ff">-1</span><span style="color: #f8f8f2">, </span><span style="color: #ae81ff">-1</span><span style="color: #f8f8f2">, </span><span style="color: #ae81ff">-1</span><span style="color: #f8f8f2">, </span><span style="color: #ae81ff">-1</span><span style="color: #f8f8f2">, </span><span style="color: #ae81ff">-1</span><span style="color: #f8f8f2">, </span><span style="color: #ae81ff">-1</span><span style="color: #f8f8f2">}</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15"></a><span style="color: #f8f8f2">};</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16"></a><span style="color: #75715e">// 2番目，4番目の車が縦向き</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17"></a><span style="color: #66d9ef">int</span><span style="color: #f8f8f2"> is_vertical[MAX </span><span style="color: #f92672">+</span><span style="color: #f8f8f2"> </span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">] </span><span style="color: #f92672">=</span><span style="color: #f8f8f2"> {</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">, </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">, </span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">, </span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">, </span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">};</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18"></a>
+<a id="__codelineno-2-19" name="__codelineno-2-19"></a><span style="color: #66d9ef">int</span><span style="color: #f8f8f2"> </span><span style="color: #a6e22e">main</span><span style="color: #f8f8f2">(){</span>
+<a id="__codelineno-2-20" name="__codelineno-2-20"></a><span style="color: #f8f8f2">    </span><span style="color: #66d9ef">int</span><span style="color: #f8f8f2"> board[HEIGHT </span><span style="color: #f92672">+</span><span style="color: #f8f8f2"> </span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">][WIDTH </span><span style="color: #f92672">+</span><span style="color: #f8f8f2"> </span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">];</span>
+<a id="__codelineno-2-21" name="__codelineno-2-21"></a>
+<a id="__codelineno-2-22" name="__codelineno-2-22"></a><span style="color: #f8f8f2">}</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="_4">プログラムの実装</h2>
+<h3 id="_5">初期配置の定義</h3>
+<p>まず，ボードをあらかじめ与えられた初期配置で初期化する必要がある．
+先ほど述べたように，初期配置は配列 <code>init[HEIGHT+2][WIDTH+2]</code> としてグローバルに定義されている．
+なので，ここで行うべき処理は，配列 <code>init</code> の内容を <code>board</code> へとコピーすることとなる．</p>
+<div class="admonition tip">
+<p class="admonition-title">二次元配列間での値のコピー</p>
+<p>添字が 2 つあるので，for 文を二重にすることで全ての要素へと代入できる．
+<div class="highlight" style="background: #272822"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-3-1">1</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-3-2">2</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-3-3">3</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-3-4">4</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-3-5">5</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-3-6">6</a></span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span style="color: #75715e">// 配列 array1[4][4] から array2[4][4] へ値をコピーする</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a><span style="color: #66d9ef">for</span><span style="color: #f8f8f2"> (i</span><span style="color: #f92672">=</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">; i</span><span style="color: #f92672">&lt;</span><span style="color: #ae81ff">4</span><span style="color: #f8f8f2">; i</span><span style="color: #f92672">++</span><span style="color: #f8f8f2">){</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a><span style="color: #f8f8f2">    </span><span style="color: #66d9ef">for</span><span style="color: #f8f8f2"> (j</span><span style="color: #f92672">=</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">; j</span><span style="color: #f92672">&lt;</span><span style="color: #ae81ff">4</span><span style="color: #f8f8f2">; j</span><span style="color: #f92672">++</span><span style="color: #f8f8f2">){</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a><span style="color: #f8f8f2">        array2[i][j] </span><span style="color: #f92672">=</span><span style="color: #f8f8f2"> array1[i][j];</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5"></a><span style="color: #f8f8f2">    }</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6"></a><span style="color: #f8f8f2">}</span>
+</code></pre></div></td></tr></table></div></p>
+</div>
+<h4 id="1">演習課題1</h4>
+<p>ボードを表す配列<code>board</code>を引数として，初期配置に従ってボードを初期化する関数<code>init_board()</code>を定義せよ．</p>
+<div class="highlight" style="background: #272822"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-4-1">1</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-4-2">2</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-4-3">3</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-4-4">4</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-4-5">5</a></span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span style="color: #66d9ef">void</span><span style="color: #f8f8f2"> </span><span style="color: #a6e22e">init_board</span><span style="color: #f8f8f2">(</span><span style="color: #66d9ef">int</span><span style="color: #f8f8f2"> board[][WIDTH</span><span style="color: #f92672">+</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">]) {</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a><span style="color: #f8f8f2">    </span><span style="color: #75715e">// ↓↓↓ ここから ↓↓↓</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3"></a>
+<a id="__codelineno-4-4" name="__codelineno-4-4"></a><span style="color: #f8f8f2">    </span><span style="color: #75715e">// ↑↑↑ ここまで ↑↑↑</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5"></a><span style="color: #f8f8f2">}</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="_6">ボードの表示</h3>
+<p>次に，現在のボードの状態を標準入出力へと表示するための処理を実装する．
+二次元配列間のコピーの場合と同様に，<code>for</code> 文を二重にすることで二次元配列の全ての要素を参照できる．
+そして，要素の値で場合分けを行った上で，対応する記号を標準出力へと表示する．</p>
+<div class="admonition tip">
+<p class="admonition-title">場合分けと標準出力への表示</p>
+<ul>
+<li>場合分けは <code>if</code> 文あるいは <code>switch</code> 文を用いる．</li>
+<li>標準出力への表示は <code>printf</code> 関数を用いる．</li>
+</ul>
+</div>
+<h4 id="2">演習課題2</h4>
+<p>ボードを表す配列<code>board</code>を引数として，標準入出力にボードを出力する関数<code>print_board()</code>を作成せよ．</p>
+<div class="highlight" style="background: #272822"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-5-1">1</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-5-2">2</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-5-3">3</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-5-4">4</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-5-5">5</a></span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span style="color: #66d9ef">void</span><span style="color: #f8f8f2"> </span><span style="color: #a6e22e">print_board</span><span style="color: #f8f8f2">(</span><span style="color: #66d9ef">int</span><span style="color: #f8f8f2"> board[][WIDTH</span><span style="color: #f92672">+</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">]){</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2"></a><span style="color: #f8f8f2">    </span><span style="color: #75715e">// ↓↓↓ ここから ↓↓↓</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3"></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4"></a><span style="color: #f8f8f2">    </span><span style="color: #75715e">// ↑↑↑ ここまで ↑↑↑</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5"></a><span style="color: #f8f8f2">}</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="_7">操作の入力</h3>
+<p><a href="#_2">処理の流れ</a>でも述べたように，操作としては「動かす車」と「向き」の2つを入力する．
+これらはいずれも整数型の変数があれば表現できる．
+動かす車はそれぞれ対応する番号として，向きは上下左右にそれぞれ整数値を割り当てればよい（たとえばテンキーの位置と対応させて，上：<code>8</code>，下：<code>2</code>．左：<code>4</code>，右：<code>6</code>，など）．
+それぞれ，<code>car</code> と <code>op</code> という2つの変数に格納しておく．</p>
+<h4 id="3">演習課題3</h4>
+<p>ボードに対する操作を表す整数<code>car</code>および<code>op</code>へのポインタを引数とし，標準入力から操作を読み取ってそれぞれ<code>car</code>および<code>op</code>へと格納する関数<code>input_op()</code>を作成せよ．</p>
+<div class="highlight" style="background: #272822"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-6-1">1</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-6-2">2</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-6-3">3</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-6-4">4</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-6-5">5</a></span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span style="color: #66d9ef">void</span><span style="color: #f8f8f2"> </span><span style="color: #a6e22e">input_op</span><span style="color: #f8f8f2">(</span><span style="color: #66d9ef">int</span><span style="color: #f8f8f2"> </span><span style="color: #f92672">*</span><span style="color: #f8f8f2">car, </span><span style="color: #66d9ef">int</span><span style="color: #f8f8f2"> </span><span style="color: #f92672">*</span><span style="color: #f8f8f2">op</span><span style="color: #f92672">*</span><span style="color: #f8f8f2">){</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2"></a><span style="color: #f8f8f2">    </span><span style="color: #75715e">// ↓↓↓ ここから ↓↓↓</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3"></a>
+<a id="__codelineno-6-4" name="__codelineno-6-4"></a><span style="color: #f8f8f2">    </span><span style="color: #75715e">// ↑↑↑ ここまで ↑↑↑</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5"></a><span style="color: #f8f8f2">}</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="_8">無効な操作の判定</h3>
+<p>現在のボードの配置によっては無効となる操作が存在する．
+具体的には，車の向き（縦・横）と方向が一致しない場合や，外周や他の車とぶつかってしまう場合は操作が無効となる．
+無効な操作に基づいてボードを更新することはできないため，更新前に操作が有効であるか無効であるかを判定しないといけない．</p>
+<div class="admonition tip">
+<p class="admonition-title">無効となる入力の検出</p>
+<ul>
+<li>車の向きと方向が一致しない場合の検出<ul>
+<li>車の向きの情報が格納された配列 <code>is_vertical</code> を参照すれば検出できる</li>
+</ul>
+</li>
+<li>外周や他の車とぶつかってしまう場合の検出<ul>
+<li>以下の手順で検出できる<ol>
+<li><code>board</code> を探索して車の両端の場所を探す<ul>
+<li>縦なら (i, j) と (k, j)</li>
+<li>横なら (i, j) と (i, k)</li>
+</ul>
+</li>
+<li><code>board</code> の移動先の場所の要素が <code>0</code> かどうかを調べる<ul>
+<li>移動方向が上や左なら <code>board[i-1][j]</code> や<code>board[i][j-1]</code> を見る</li>
+<li>移動方向が下や右なら <code>board[k+1][j]</code> や<code>board[i][k+1]</code> を見る</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h4 id="4">演習課題4</h4>
+<p>ボードを表す配列<code>board</code>とボードに対する操作を表す整数<code>car</code>および<code>op</code>を引数とし，操作が無効であるかどうかを判定する関数<code>check_op()</code>を作成せよ．
+関数の戻り値は，操作が有効であれば<code>1</code>とし，そうでなければ<code>0</code>とする．</p>
+<div class="highlight" style="background: #272822"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-7-1">1</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-7-2">2</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-7-3">3</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-7-4">4</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-7-5">5</a></span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span style="color: #66d9ef">int</span><span style="color: #f8f8f2"> </span><span style="color: #a6e22e">check_op</span><span style="color: #f8f8f2"> (</span><span style="color: #66d9ef">int</span><span style="color: #f8f8f2"> car, </span><span style="color: #66d9ef">int</span><span style="color: #f8f8f2"> op, </span><span style="color: #66d9ef">int</span><span style="color: #f8f8f2"> board[][WIDTH</span><span style="color: #f92672">+</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">]){</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2"></a><span style="color: #f8f8f2">    </span><span style="color: #75715e">// ↓↓↓ ここから ↓↓↓</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3"></a>
+<a id="__codelineno-7-4" name="__codelineno-7-4"></a><span style="color: #f8f8f2">    </span><span style="color: #75715e">// ↑↑↑ ここまで ↑↑↑</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5"></a><span style="color: #f8f8f2">}</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="_9">ボードの更新</h3>
+<p>有効な操作が入力された場合は，操作に従ってボードを更新することになる．
+このとき，移動先となるマスと，車の最後尾のマスの二カ所を変更しないといけない．
+そのため，まずボードを探索して移動させる車の両端の位置を求めた上で，移動方向をもとに変更するマスの位置を計算し，更新を行う．
+具体的には，以下のような手順となる．</p>
+<ol>
+<li><code>board</code> を探索して車の両端の場所を探す<ul>
+<li>縦向きの場合，それぞれ (i, j) と (k, j) とする</li>
+<li>横向きの場合，それぞれ (i, j) と (i, k) とする</li>
+</ul>
+</li>
+<li>移動方向が<ul>
+<li>上なら，<code>board[i-1][j]</code> と <code>board[k][j]</code> を入れ替える</li>
+<li>左なら，<code>board[i][j-1]</code> と <code>board[i][k]</code> を入れ替える</li>
+<li>下なら，<code>board[i][j]</code> と <code>board[k+1][j]</code> を入れ替える</li>
+<li>右なら，<code>board[i][j]</code> と <code>board[i][k+1]</code> を入れ替える</li>
+</ul>
+</li>
+</ol>
+<h4 id="5">演習課題5</h4>
+<p>現在のボードの配置を表す配列<code>board</code>と操作する車およびその向きを表す整数<code>car</code>および<code>op</code>を引数とし，操作に従ってボードの配置を変更する関数<code>change_board()</code>を作成せよ．</p>
+<div class="highlight" style="background: #272822"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-8-1">1</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-8-2">2</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-8-3">3</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-8-4">4</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-8-5">5</a></span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span style="color: #66d9ef">void</span><span style="color: #f8f8f2"> </span><span style="color: #a6e22e">change_board</span><span style="color: #f8f8f2">(</span><span style="color: #66d9ef">int</span><span style="color: #f8f8f2"> car, </span><span style="color: #66d9ef">int</span><span style="color: #f8f8f2"> op, </span><span style="color: #66d9ef">int</span><span style="color: #f8f8f2"> board[][WIDTH</span><span style="color: #f92672">+</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">]){</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2"></a><span style="color: #f8f8f2">    </span><span style="color: #75715e">// ↓↓↓ ここから ↓↓↓</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3"></a>
+<a id="__codelineno-8-4" name="__codelineno-8-4"></a><span style="color: #f8f8f2">    </span><span style="color: #75715e">// ↑↑↑ ここまで ↑↑↑</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5"></a><span style="color: #f8f8f2">}</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="_10">終了判定</h3>
+<p>ボードが更新されるたびに，ゲームクリアの条件を満たしているかどうか判定を行う必要がある．
+条件を満たしていれば，ゲームクリアとしてプログラムを終了し，満たしていなければ操作を入力するフェーズへと戻る．
+ゲームクリアの条件は定められた車が出口に到達していることなので，ボード上の出口に対応したマスの値が <code>1</code> であるかどうかを判定すればよい．</p>
+<h4 id="6">演習課題6</h4>
+<p>現在のボードの配置を表す配列<code>board</code>を引数とし，ゲームクリアの条件を満たしているかどうかを判定する関数<code>check_board()</code>を作成せよ．
+関数の戻り値は，条件を満たしていれば<code>1</code>とし，そうでなければ<code>0</code>とする．</p>
+<div class="highlight" style="background: #272822"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-9-1">1</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-9-2">2</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-9-3">3</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-9-4">4</a></span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"><a href="#__codelineno-9-5">5</a></span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span style="color: #66d9ef">int</span><span style="color: #f8f8f2"> </span><span style="color: #a6e22e">check_board</span><span style="color: #f8f8f2">(</span><span style="color: #66d9ef">int</span><span style="color: #f8f8f2"> board[][WIDTH</span><span style="color: #f92672">+</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">]){</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2"></a><span style="color: #f8f8f2">    </span><span style="color: #75715e">// ↓↓↓ ここから ↓↓↓</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3"></a>
+<a id="__codelineno-9-4" name="__codelineno-9-4"></a><span style="color: #f8f8f2">    </span><span style="color: #75715e">// ↑↑↑ ここまで ↑↑↑</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5"></a><span style="color: #f8f8f2">}</span>
+</code></pre></div></td></tr></table></div>
+<h4 id="7">演習課題7</h4>
+<p>これまでに定義した関数を用いて TOKYO PARKING を行うプログラムを作成せよ．</p>
+
+
+
+
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Top" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Top
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../lec02/" class="md-footer__link md-footer__link--next" aria-label="Next: 課題R2" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              課題R2
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.annotate"], "search": "../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.2ab50757.min.js"></script>
+      
+        <script src="../js/extra.js"></script>
+      
+        <script src="../js/config.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS_CHTML"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+      
+    
+  </body>
+</html>
