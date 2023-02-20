@@ -30,3 +30,8 @@ code {
   font-family: SFMono-Regular, Consolas, Menlo, monospace;
   font-weight: bold;
 }
+
+iframe[src$=".pdf"]{
+  width:50%;
+  height:50vh;
+}
